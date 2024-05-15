@@ -21,6 +21,7 @@
 
 /* Navbar Styles */
 .navbar {
+  margin-top: 38px;
   background-color: #000000;
 }
 .navbar .navbar-brand,
@@ -91,8 +92,9 @@
   background-color: #000000;
 }
 .carousel-item img {
+  margin-top: 116px;
   max-width: 100%;
-  max-height: 650px;
+  height: auto;
   object-fit: cover;
 }
 
