@@ -1,0 +1,115 @@
+/* Contact Info Styles */
+.contact-info {
+  background-color: #f8f9fa;
+  font-size: 0.9em;
+  padding: 0.5em 0;
+}
+.contact-info i {
+  margin-right: 8px;
+}
+.contact-info .container {
+  display: flex;
+  justify-content: flex-end;
+}
+.contact-info div {
+  display: flex;
+  align-items: center;
+}
+.contact-info div + div {
+  margin-left: 15px;
+}
+
+/* Navbar Styles */
+.navbar {
+  background-color: #000000;
+}
+.navbar .navbar-brand,
+.navbar .nav-link {
+  color: #ffffff;
+  padding: 16px;
+}
+.navbar .nav-link.active {
+  color: #ffc107;
+}
+.navbar .nav-link:hover {
+  color: #ffc107;
+}
+.navbar-toggler {
+  border-color: rgb(255, 255, 255);
+}
+.navbar-toggler-icon {
+  color: #ffffff;
+}
+
+/* Carousel Styles */
+.carousel-caption {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #ffffff;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 20px;
+}
+
+.carousel-caption h5 {
+  margin-bottom: 10px;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  width: 5%;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  padding: 15px;
+  color: #ffffff;
+}
+
+.carousel-control-prev-icon:hover,
+.carousel-control-next-icon:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.carousel-indicators {
+  bottom: 10px;
+}
+
+.carousel-indicators button {
+  background-color: #ffffff;
+  border: none;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  margin: 0 5px;
+}
+
+.carousel-indicators .active {
+  background-color: #000000;
+}
+.carousel-item img {
+  max-width: 100%;
+  max-height: 650px;
+  object-fit: cover;
+}
+
+/* Marquee Styles */
+.marquee-container {
+  overflow: hidden;
+  white-space: nowrap;
+  width: 100%;
+}
+
+marquee {
+  display: block;
+  padding: 15px;
+  color: #ffffff;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(191, 191, 191, 1) 0%, rgba(25, 24, 22, 1) 100%);
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
