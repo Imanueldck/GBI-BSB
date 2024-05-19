@@ -238,7 +238,9 @@ marquee {
 #pastor {
   width: 100%;
   padding-top: 100px;
-  background-color: #ffffff;
+  background-image: url(/images/cad.png);
+  
+  
 }
 .featurette {
   margin-bottom: 50px;
