@@ -236,7 +236,9 @@ marquee {
 
 /* css pastor */
 #pastor {
+  width: 90%;
   padding-top: 100px;
+  background-color: #ffffff;
 }
 .featurette {
   margin-bottom: 50px;
@@ -259,7 +261,8 @@ marquee {
 .featurette img {
   border-radius: 10px;
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
-  margin: 10px;
+  max-width: 100%; /* Gambar menjadi responsif */
+  height: auto; /
 }
 
 /* Efek hover untuk gambar */
