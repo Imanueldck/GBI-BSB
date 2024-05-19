@@ -1,18 +1,15 @@
-// Toggle sidebar function
-document.querySelector('[data-bs-toggle="sidebar"]').addEventListener("click", function () {
-  document.querySelector(".sidebar").classList.toggle("sidebar-active");
-});
+<script>
+  const contactInfo = document.querySelector('.contact-info');
+  const offcanvasContactInfo = document.getElementById('offcanvasContactInfo');
 
-// Function to check window width and toggle sidebar accordingly
-function checkWidth() {
-  if (window.innerWidth >= 992) {
-    // If window width is larger than or equal to 992px (desktop), hide sidebar
-    document.querySelector(".sidebar").classList.remove("sidebar-active");
+  function handleResize() {
+    if (window.innerWidth <= 991.98) {
+      offcanvasContactInfo.appendChild(contactInfo);
+    } else {
+      document.body.insertBefore(contactInfo, document.body.firstChild);
+    }
   }
-}
 
-// Check window width on page load
-checkWidth();
-
-// Check window width on window resize
-window.addEventListener("resize", checkWidth);
+  window.addEventListener('resize', handleResize);
+  document.addEventListener('DOMContentLoaded', handleResize);
+</script>
