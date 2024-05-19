@@ -236,7 +236,7 @@ marquee {
 
 /* css pastor */
 #pastor {
-  width: 90%;
+  width: 100%;
   padding-top: 100px;
   background-color: #ffffff;
 }
@@ -269,4 +269,27 @@ marquee {
 .featurette img:hover {
   transform: scale(1.05);
   transition: transform 0.3s ease;
+}
+
+.instagram-button {
+  margin-top: 20px;
+}
+
+.instagram-button .btn {
+  background-color: #ffffff; /* Warna latar belakang */
+  border: none; /* Hapus border */
+  padding: 10px 20px; /* Padding tombol */
+  border-radius: 5px; /* Sudut tombol */
+  color: #000000; /* Warna teks */
+  transition: background-color 0.3s; /* Efek transisi */
+}
+
+.instagram-button .btn:hover {
+  background-color: #f48194; 
+  color: #ffffff;
+}
+
+.instagram-logo {
+  margin-right: 5px;
+  
 }
