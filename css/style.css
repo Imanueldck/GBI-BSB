@@ -1,8 +1,12 @@
+.container {
+  width: 95%;
+  margin: 0 auto;
+}
 /* Navbar Styles */
-/* General Navbar Styles */
+/* Navbar styling */
 .navbar {
-  padding: 0.8rem 1rem;
-  background-color: #007bf7 ; /* Custom background color */
+  padding: 1rem 2rem;
+  background-color: #343a40;
 }
 
 .navbar-brand {
@@ -14,10 +18,22 @@
 .nav-link {
   color: #fff;
   margin-right: 2rem;
+  position: relative; /* Menjadikan posisi relatif untuk child pseudo-element */
 }
 
-.nav-link:hover {
-  color: #ddd;
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: -3px; /* Atur posisi garis bawah */
+  left: 0;
+  width: 0%;
+  height: 2px; /* Ketebalan garis bawah */
+  background-color: #fff;
+  transition: width 0.3s ease; /* Efek transisi lebar garis bawah */
+}
+
+.nav-link:hover::after {
+  width: 100%; /* Membuat garis bawah muncul saat dihover */
 }
 
 .nav-item .dropdown-menu {
@@ -31,6 +47,13 @@
 .nav-item .dropdown-item:hover {
   background-color: #495057;
 }
+
+/* Menghilangkan latar belakang saat hover */
+.nav-link:hover,
+.nav-item .dropdown-item:hover {
+  background-color: transparent;
+}
+
 
 /* Offcanvas Styles */
 .offcanvas-end {
@@ -158,10 +181,7 @@ marquee {
   text-transform: uppercase;
 }
 
-.container {
-  width: 90%;
-  margin: 0 auto;
-}
+
 
 .welcome-message {
   background-color: #fff;
