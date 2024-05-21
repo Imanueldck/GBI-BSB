@@ -2,7 +2,7 @@
 /* General Navbar Styles */
 .navbar {
   padding: 0.8rem 1rem;
-  background-color: #343a40 !important; /* Custom background color */
+  background-color: #007bf7 ; /* Custom background color */
 }
 
 .navbar-brand {
@@ -13,7 +13,7 @@
 
 .nav-link {
   color: #fff;
-  margin-right: 1rem;
+  margin-right: 3rem;
 }
 
 .nav-link:hover {
@@ -292,4 +292,79 @@ marquee {
 .instagram-logo {
   margin-right: 5px;
   
+}
+
+/* css event */
+#event{
+  padding: 20px;
+  padding-top: 50px;
+}
+#event .card {
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  margin-bottom: 20px;
+}
+
+#event h2{
+  font-size: 30px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-style: oblique;
+  font-weight: bolder;
+  margin: 20px;
+  padding-bottom: 30px;
+  margin-bottom: 40px;
+}
+#event .card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+#event .card-img-top {
+  width: 100%;
+  height: auto; 
+  object-fit: cover; 
+  object-position: center; 
+  border-bottom: 1px solid #e0e0e0;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+#event .card-body {
+  text-align: center;
+  padding: 10px;
+  
+}
+
+
+#event .card-title {
+  margin-top: 15px;
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #333;
+}
+.card-text {
+  margin-bottom: 1rem;
+}
+
+#event .logo-img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+ 
+#event button {
+  padding: 0.5rem 1rem;
+  border: none;
+  background-color: #007bff;
+  color: #ffffff;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#event button:hover {
+  background-color: #004187;
 }
